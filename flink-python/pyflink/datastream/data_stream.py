@@ -1184,6 +1184,7 @@ class KeyedStream(DataStream):
 
     def _accumulate(self, position: Union[int, str], acc_type: AccumulateType):
         """
+        Modify code test.
         The base method is used for operators such as min, max, min_by, max_by, sum.
         """
         if not isinstance(position, int) and not isinstance(position, str):
@@ -1194,6 +1195,7 @@ class KeyedStream(DataStream):
         class AccumulateReduceFunction(ReduceFunction):
 
             def __init__(self, position, agg_type):
+                # Add comment.
                 self._pos = position
                 self._agg_type = agg_type
                 self._reduce_func = None
@@ -1284,6 +1286,7 @@ class KeyedStream(DataStream):
 
     def sum(self, position_to_sum: Union[int, str] = 0) -> 'DataStream':
         """
+        new operator.
         Applies an aggregation that gives a rolling sum of the data stream at the given position
         grouped by the given key. An independent aggregate is kept per key.
 

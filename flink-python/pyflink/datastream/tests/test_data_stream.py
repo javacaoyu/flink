@@ -1259,6 +1259,9 @@ class BatchModeDataStreamTests(DataStreamTests, PyFlinkBatchTestCase):
         self.assert_equals_sorted(expected, results)
 
     def test_keyed_sum(self):
+        pass
+
+    def test_keyed_sum(self):
         self.env.set_parallelism(1)
         ds = self.env.from_collection(
             [(1, 1), (1, 2), (1, 3), (5, 1), (5, 5)],
