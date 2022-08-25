@@ -1457,6 +1457,7 @@ class KeyedStream(DataStream):
         Applies an aggregation that gives the current minimum of the data stream at the given
         position by the given key. An independent aggregate is kept per key.
 
+        修改了
         Example(Tuple data):
         ::
 

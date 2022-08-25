@@ -1446,6 +1446,7 @@ class ProcessDataStreamStreamingTests(DataStreamStreamingTests, ProcessDataStrea
         self.assert_equals_sorted(expected, results)
 
     def test_keyed_sum(self):
+        # 修改了点东西
         self.env.set_parallelism(1)
         ds = self.env.from_collection(
             [(1, 1), (1, 2), (1, 3), (2, 5), (2, 1)],
